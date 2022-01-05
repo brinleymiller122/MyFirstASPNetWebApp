@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\jquery\Downloads\**" />
+    <Content Remove="wwwroot\lib\jquery\Downloads\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jquery\Downloads\**" />
+    <None Remove="wwwroot\lib\jquery\Downloads\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\index.html" />
+  </ItemGroup>
+
+</Project>
